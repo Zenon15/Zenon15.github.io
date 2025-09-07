@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'Proggy';
+    src: url('fonts/ProggyClean.ttf') format('truetype');
+    }
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #1B1C1D;
+    font-family: 'Proggy', monospace;       
+    }
+
+/* kotak atas */
+.kotak {
+    
+    display: flex;
+    background-color: #4D4F50;  
+    padding: 1rem 2rem;
+    }
+
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+    margin-left: 40px;
+    display: flex;
+    }
+
+/* nama & foto */
+.atas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+    }
+
+.nama p {
+    color: white;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    margin: 0;
+    font-weight: bold;
+    }
+
+.foto img {
+    width: 19rem;
+    height: auto;
+    border-radius: 0.5rem;
+    }
+
+/* bio */
+.bio {
+    text-align: justify;
+    margin: 3rem 4rem;
+    color: white;
+    font-size: 1.88rem;
+    line-height: 1.8;
+    }
+
+.info {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    }
+
+.info i {
+    width: 2rem;
+    text-align: center;
+    color: white;
+    }
+
+@media (max-width: 768px) {
+  .atas {
+    flex-direction: column;        /* tumpuk ke atas */
+    text-align: center;            /* teks rata tengah */
+    padding: 2rem 1rem;            /* padding lebih kecil di HP */
+  }
+
+  .nama p {
+    font-size: 1.5rem;             /* perkecil font agar pas di HP */
+    line-height: 1.4;
+    margin-bottom: 2rem;
+  }
+
+  .foto img {
+    width: 10rem;                  /* lebih kecil di HP */
+    margin-bottom: 1.5rem;         /* jarak bawah supaya rapi */
+  }
+
+  .bio {
+    margin-top: 0.5rem;
+    margin: 1.5rem;                /* margin lebih kecil */
+    font-size: 1rem;               /* perkecil font */
+    line-height: 1.6;
+  }
+
+  .info {
+    font-size: 1rem;
+    gap: 0.5rem;
+  }
+}
